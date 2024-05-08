@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const Converter = async (req, res) => {
+export const ExchangeRates = async (req, res) => {
   try {
     const response = await axios.get(
       "https://api.coingecko.com/api/v3/exchange_rates"

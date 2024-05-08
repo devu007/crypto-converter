@@ -1,8 +1,8 @@
 import express from "express";
-import { Converter } from "../controller/controller.js";
+import { ExchangeRates } from "../controller/controller.js";
 
 const route = express.Router();
 
-route.get("/cryptocurrencies", Converter);
+route.get("/cryptocurrencies", ExchangeRates);
 
 export default route;
