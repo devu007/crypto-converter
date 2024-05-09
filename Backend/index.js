@@ -1,6 +1,6 @@
 import express, { urlencoded } from "express";
 import cors from "cors";
-import route from "./routes/route.js";
+import route from "./routes/api.js";
 import bodyParser from "body-parser";
 
 const app = express();
