@@ -65,7 +65,7 @@ function Converter() {
   }, [inputValue, firstSelect, secondSelect]);
 
   return (
-    <div className="container">
+    <div className="container" data-testid="converter-1">
       <Card
         className="crypto-card"
         title={
