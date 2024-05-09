@@ -1,16 +1,16 @@
 import express, { urlencoded } from "express";
-import cors from "cors";
 import route from "./routes/api.js";
-import bodyParser from "body-parser";
+import corsMiddleware from "./middlewares/cors.js";
+import errorHandlerMiddleware from "./middlewares/errorHandler.js";
 
 const app = express();
 
-app.use(cors());
-
-app.use(bodyParser.json({ extended: true }));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(corsMiddleware);
 
 app.use("/", route);
+
+app.use(errorHandlerMiddleware);
+
 const PORT = 3000;
 
 app.listen(PORT, () => {
