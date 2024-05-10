@@ -1,6 +1,6 @@
 # Crypto Converter
 
-Develop a small application that converts amounts between different crypto currencies. The application will involve calling a public currency conversion API from coingecko, performing some calculations, and displaying the results.
+Develop a small application that converts amounts between different cryptocurrencies. The application will call a public currency conversion API from coingecko, perform some calculations, and display the results.
 
 # How to run it on your Local System
 
@@ -8,5 +8,8 @@ Develop a small application that converts amounts between different crypto curre
 
 -> Install all the dependencies.
 
--> Run npm start in Frontend folder.
+-> Run npm start in the Frontend folder.
 
+# Live Link
+
+https://converter-ebon.vercel.app/
